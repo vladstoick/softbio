@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Medical Plants</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author"><!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet"><!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="ico/favicon.png" rel="shortcut icon">
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="index.html">Medical Plants</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class=""><a href="teorie.html">Theory</a></li>
+                        <li class=""><a href="practice.html">Practice</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <div class="container" style="text-align:center">
+        <div class="gameItems">
+            <h1 id="question">Quesiton</h1>
+            <div class="row">
+                <div class="span4"><button class="btn btn-large btn btn-primary" onClick="clickedButton(1)" id="btn0">Hello World</button></div>
+                <div class="span4"><button class="btn btn-large btn btn-primary" onClick="clickedButton(2)" id="btn1">Hello World</button></div>
+                <div class="span4"><button class="btn btn-large btn btn-primary" onClick="clickedButton(3)" id="btn2">Hello World</button></div>
+            </div>
+            <h1 id="status" style="color:red">No mistake shall pass my tulips!</h1>
+        </div>
+        
+        <div class="modal hide fade" id="modalInfo" >
+            <div class="modal-body" style="max-height:600px;">
+                <img src=""/>
+                <div class="description" id="description0" style="display: block;">
+                    <p> - A yellow-flowering, stoloniferous, perennial herb </p>
+                    <p> - Categorized as noxious weed in many regions, highly toxic to livestock </p>
+                    <p> - Branched stems, opposing, narrow, oblong leaves, yellow flowers </p>
+                    <p> - The upper branches with flowers are used for medicinal purposes (medical uses: sedative, relaxing effect; therapeutic recommendation: insomnia, mild depression, mental exhaustion) </p>
+                </div>
+
+                <div class="description" id="description1">
+                    <p>- An evergreen coniferous tree </p>
+                    <p>- The bark is thick, scaly dark grey-brown on the lower trunk, and thin, flaky and orange on the upper trunk and branches, the leaves ('needles') are blue-green, produced in fascicles of two with a persistent grey 5–10 mm basal sheath; the flowers= seed cones, male and female </p>
+                    <p>- Volatile oil can be extracted from it </p>
+                    <p>- The leaves are used for medicinal purposes (medical uses: stimulant for the nervous system, therapeutic recommendation: mental exhaustion, fatigue) </p>
+                </div>
+
+                <div class="description" id="description2">
+                    <p> - A variable annual plant, </p>
+                    <p> - It grows on the sides of roads and near various cereal crops </p>
+                    <p> - Bristly pinnately divided leaves, flower with four large, red petals </p>
+                    <p> - The flowers and seeds are used for medicinal purposes (medical use: sedative effect, therapeutic recommendation: insomnia) </p>
+                </div>
+
+                <div class="description" id="description3">
+                    <p> - A herbaceous perennial plant </p>
+                    <p> - The leaves are lobed and wavy-edged and contain  yellow latex, the flowers consist of four yellow petals and appear in umbelliform cymes or  inflorescences of about 4 flowers. </p>
+                    <p> - It is considered an aggressive invasive plant in natural areas (both woods and fields) and it favours shaded areas. </p>
+                    <p> - The aerial parts and roots of greater celandine are used for medicinal purposes (medical use: sedative effect, analgesic, therapeutic recommendation: headaches, tiredness, exhaustion) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: headaches, dizziness, delirium, hallucinations, asphyxia, death </p>
+                </div>
+
+                <div class="description" id="description4">
+                    <p> - A dioecious, perennial, herbaceous climbing plant </p>
+                    <p> - It grows at the edge of forests and shrubberies </p>
+                    <p> - A twining vine with lobed leaves and green female flowers arranged in conelike spikes. </p>
+                    <p> - The leaves are used for medicinal purposes (medical use: sedative effect, therapeutic recommendation:  insomnia, tiredness, exhaustion </p>
+                </div>
+
+                <div class="description" id="description5">
+                    <p> - An annual herbaceous plant </p>
+                    <p> - The leaves are palmately compound or digitate, with serrate leaflets; male flowers are normally borne on loose panicles at the end of branches, and female flowers are borne on racemes. </p>
+                    <p> - The leaves are used for medicinal purposes (medical use: sedative, analgesic, tonic effect, therapeutic recommendation: stimulant for the nervous system) </p>
+                </div>
+
+                <div class="description" id="description6">
+                    <p> - A strongly aromatic perennial shrub </p>
+                    <p> - Commonly grown as an ornamental plant and not only </p>
+                    <p> - The leaves are long and evergreen, the flowers are pinkish-purple (lavender-coloured), produced on spikes and appear in inflorescences </p>
+                    <p> - The inflorescences are used to extract lavender oil (medical use: sedative, soothing, tonic effect, therapeutic recommendation: insomnia, headaches, migraines) </p>
+                </div>
+
+                <div class="description" id="description7">
+                    <p> - A perennial shrub or small tree, with a dense crown. </p>
+                    <p> - The younger stems bear sharp thorns, the leaves are  obovate and deeply lobed </p>
+                    <p> - The hermaphrodite flowers are produced in corymbs or inflorescences with each flower having five white petals, which later yield haws or small, oval dark red fruit </p>
+                    <p> - The leaves, flowers and fruit are used for medicinal purposes (medical use: it causes low blood pressure, it also has a sedative, relaxing effect, therapeutic recommendation: insomnia, neurosis) </p>
+                </div>
+
+                <div class="description" id="description8">
+                    <p> - It is a perennial deciduous tree growing in forest and edges of roads </p>
+                    <p> - The leaves are alternately arranged, rounded to triangular-ovate, the flowers are pale yellow, with 5 petals hermaphrodite, and have a strong scent </p>
+                    <p> - The flowers are used for medicinal purposes (medical use: analgesic, sedative effect, therapeutic recommendation: insomnia, migraines, physical and mental exhaustion) </p>
+                </div>
+
+                <div class="description" id="description9">
+                    <p> - It is a medium-sized to large perennial deciduous tree growing usually on the river banks and other humid regions </p>
+                    <p> - The leaves are paler than most other willows, due to a covering of very fine, silky white hairs, in particular on the underside, hence the name of the tree </p>
+                    <p> - The flowers are yellow in  colour and  produced in catkins, pollinated by insects </p>
+                    <p> - The bark of the tree is used for medicinal purposes (medical use: analgesic- the active extract of the bark is salicin, whose synthetically altered version is  acetylsalicylic acid, later named aspirin; it also has sedative effect, therapeutic recommendation: insomnia caused by stress or neuroses) </p>
+                </div>
+
+                <div class="description" id="description10">
+                    <p> - It is a herbaceous rhizomatous perennial plant growing in humid areas </p>
+                    <p> - The leaves are  dark green with reddish veins, and with an acute apex and coarsely toothed margins, the flowers are purple or pink, produced in whorls (verticillasters) or inflorescences </p>
+                    <p> - The whole plant is used for medicinal purposes (medical use: sedative or tonic effect, therapeutic recommendation: migraines, insomnia, aids concentration) </p>
+                </div>
+
+                <div class="description" id="description11">
+                    <p> - It is a foul-smelling, erect annual, freely branching herb that forms a bush, growing wildly. </p>
+                    <p> - The leaves are long, smooth, toothed, soft, irregularly undulate with a bitter and nauseating taste </p>
+                    <p> - The fragrant flowers are trumpet-shaped, white to creamy or violet, and eventually produce an  elliptic seed capsule covered with spines </p>
+                    <p> - The leaves are used for medicinal purposes (medical use: sedative effect, therapeutic recommendation: calming effect, useful for sufferers of Parkinson’s disease) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: hallucinations, schizoid tendencies</p>
+                </div>
+
+                <div class="description" id="description12">
+                    <p> - It is a deciduous shrub or small tree which grows in forests and shrubberies </p>
+                    <p> - The leaves are arranged in opposite pairs, pinnate with five to seven (rarely nine) leaflets, with a serrated margin. </p>
+                    <p> - The hermaphrodite flowers are yellowish white in colour and borne in large corymbs or inflorescences and eventually produce dark purple fruit </p>
+                    <p> - The flowers, bark and fruit are used for medicinal purposes (medical use: analgesic, sedative effect, therapeutic recommendation: mental afflictions) </p>
+                </div>
+
+                <div class="description" id="description13">
+                    <p> - An annual, herbaceous plant which grows on meadows and fields </p>
+                    <p> - The long and narrow leaves are bipinnate or tripinnate, the yellow flowers are borne in paniculate flower heads or inflorescences and have a strong, aromatic smell. </p>
+                    <p> - The flowers are used for medicinal purposes (medical use: sedative, anesthetic effect, therapeutic recommendation: insomnia, mental exhaustion, neuralgia) </p>
+                </div>
+
+                <div class="description" id="description14">
+                    <p> - A perennial tree which grows in forests and </p>
+                    <p> - The leaves are pinnate with oval leaflets, usually with a pair of short thorns at the base, </p>
+                    <p> - The intensely fragrant flowers are white, borne in pendulous racemes or inflorescences, and are edible, eventually producing a fruit in the shape of a pod </p>
+                    <p> - The leaves and bark are used for medicinal purposes (medical use: sedative, anesthetic effect, therapeutic use: migraines, irritability, insomnia) </p>
+                </div>
+
+                <div class="description" id="description15">
+                    <p> - It is a herbaceous, perennial plant with fibrous roots, which grows naturally on uncultivated, arid ground, on rocky slopes, and at the edge of footpaths and fields. </p>
+                    <p> - The leaves are spirally arranged, greenish-grey above and white below, covered with silky silvery-white trichomes, and bearing minute oil-producing glands; </p>
+                    <p> - Its flowers are pale yellow, tubular, and clustered in leafy and branched panicles, eventually producing  a fruit or small achene </p>
+                    <p> - It is used in the making of some alcoholic beverages and as as anthelmintic </p>
+                    <p> - The leaves and blooms are used for medicinal purposes (medical use: light sedative, therapeutic use: migraines, headaches) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: convulsions, seizures, coma, death </p>
+                </div>
+
+                <div class="description" id="description16">
+                    <p> - It is an evergreen shrub or small tree native to East, South and Southeast Asia </p>
+                    <p> - Fresh leaves contain about 4% caffeine, the young, light green leaves are preferably harvested for tea production; they have short white hairs on the underside while older leaves are deeper green. Different leaf ages produce differing tea qualities, since their chemical compositions are different. Usually, the tip (bud) and the first two to three leaves are harvested for processing. This hand picking is repeated every one to two weeks. </p>
+                    <p> - The flowers are yellow-white, with 7 to 8 petals. </p>
+                    <p> - The young leaves are used for medicinal purposes (medical use: nervous tonic, therapeutic recommendation: stimulates the nervous system, migraines, tiredness) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: causes agitation, restlessness, anxiety, insomnia, addiction </p>
+                </div>
+
+                <div class="description" id="description17">
+                    <p> - A perennial shrub, originally found in the southwestern highlands of Ethiopia </p>
+                    <p> - The leaves are opposite, simple elliptic-ovate to oblong, glossy dark green. </p>
+                    <p> - The flowers are white and grow in axillary clusters, eventually producing a fruit which is a drupe (though commonly called a "cherry) maturing bright red to purple and typically contains two seeds (the coffee seeds). </p>
+                    <p> - The fruit are used for medicinal purposes (medical use: stimulant for the nervous system, therapeutic use: stimulant for the nervous system, increases concentration and responsiveness) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: it causes restlessness, anxiety, insomnia, addiction </p>
+                </div>
+
+                <div class="description" id="description18">
+                    <p> - It is a perennial herbaceous plant, originally found in South America, now cultivated in many countries </p>
+                    <p> - The leaves are large and green, covered with short viscid-glandular hairs, which exude a yellow secretion containing nicotine; the white-pinkish flowers are long and trumpet shaped. </p>
+                    <p> - The leaves are used for medicinal purposes (medical use: sedative, relaxing effect, therapeutic recommendation: irritability, nervousness, anxiety) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: it can cause intoxication, headaches, confusion, death </p>
+                </div>
+
+                <div class="description" id="description19">
+                    <p> - A fast growing perennial vine with climbing or trailing stems, originally found in India </p>
+                    <p> - Leaves are alternate and palmately 3-lobed and occasionally 5-lobed, with two characteristic glands at the base of the blade on the petiole. </p>
+                    <p> - Flowers have five bluish-white petals, eventually producing a fleshy fruit, also referred to as a maypop, an oval yellowish berry about the size of a hen egg </p>
+                    <p> - The whole plant is used for medicinal purposes (medical use: sedative, analgesic effect, therapeutic recommendation: insomnia, anxiety) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: it causes hallucinations </p>
+                </div>
+
+                <div class="description" id="description20">
+                    <p> - An evergreen tree originally found in West Africa </p>
+                    <p> - The leaves are long and ovoid pointed at both the ends with a leathery texture. </p>
+                    <p> - The yellow flowers have purple spots, and produce star-shaped fruit, which contain a dozen round or square seeds – the kola nuts. </p>
+                    <p> - It can be found in the composition of some non-alcoholic beverages </p>
+                    <p> - The seeds are used for medicinal purposes (medical use: stimulant for the nervous system, therapeutic recommendation: exhaustion, it aids concentration and focus) </p>
+                    <p style="color:red;font-weight:bold"> - Neurotoxic plant: it causes the intense stimulation of the nervous system. </p>
+                </div>
+    </div> <!-- /container -->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/challenge3.js"></script>
+
+</body>
+</html>
