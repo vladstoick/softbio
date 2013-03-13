@@ -285,7 +285,7 @@
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
             <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
-        <div class="" id="modalInfo">
+        <div class="modal hide fade" id="modalInfo">
             <div class="modal-body">
                 <img id="imgModal" src=""/>
 
@@ -441,6 +441,9 @@
                     <p style="color:red;font-weight:bold"> - Neurotoxic plant: it causes the intense stimulation of the nervous system. </p>
                 </div>
             </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+             </div>
         </div>
     </div> <!-- /container -->
 
@@ -449,21 +452,22 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         $('.carousel').carousel('pause') ;
-        var slideTo=0,slideFrom=0;
-        $('.carousel').on('slide',function(e){
-            slideFrom = $(this).find('.active').index();
-            slideTo = $(e.relatedTarget).index();
-            console.log(slideTo);
-            $(".description").hide();
-            //$('#description'+slideFrom).hide( ) ;
 
+        $('.carousel').on('slide',function(e){
+            var slideFrom = $(this).find('.active').index();
+            var slideTo = $(e.relatedTarget).index();
+            $('#description'+slideFrom).hide( ) ;
+            $('#description'+slideTo).show( ) ;
         });
         $('.item').on('click',function  (e) {
-            console.log(slideTo);
-            $(".description").hide();
-            $('#description'+slideTo).toggle( ) ;
+            var slideFrom = $('.carousel').find('.active').index();
+            var slideTo = $('.carousel').index();
+            $('#modalInfo'+slideFrom).hide( ) ;
+            $('#modalInfo'+slideTo).show( ) ;
+            $('#modalInfo').modal('show');
+            console.log(slideFrom);
         });
-        $(".description").hide();
+        $("")
     </script>
 
 </body>
