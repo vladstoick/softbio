@@ -69,14 +69,6 @@ var jQuery_1_6_2 = $.noConflict(true);
 					orientation: "across",
 					startx: 4,
 					starty: 8
-				},
-				{
-					clue: "The answer of the game!",
-					answer: "cannabis",
-					position: 1,
-					orientation: "down",
-					startx: 4,
-					starty: 1
 				}
 			] 
 	

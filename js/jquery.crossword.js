@@ -26,7 +26,7 @@
 			
 			// append clues markup after puzzle wrapper div
 			// This should be moved into a configuration object
-			this.after('<div id="puzzle-clues"><h2>Across</h2><ol id="across"></ol><h2>Down</h2><ol id="down"></ol></div>');
+			this.after('<div id="puzzle-clues"><h2>Crossword</h2><ol id="across"></ol><h2></h2><ol id="down"></ol></div>');
 			
 			// initialize some variables
 			var tbl = ['<table id="puzzle">'],
@@ -307,9 +307,19 @@
 					
 						$('.clues-active').addClass('clue-done');
 						showModalc2(activePosition);
-						solved.push(valToCheck);
-						solvedToggle = true;
-						return;
+						var toAdd=1;
+						for(var i=0;i<solved.length;i++)
+							if(solved[i]==valToCheck)
+								toAdd=0;
+						if(toAdd==1)
+						{
+							solved.push(valToCheck);
+							if(solved.length==8)
+								showCannabis();
+							solvedToggle = true;
+						
+						}
+							return;
 					}
 					
 					currOri === 'across' ? nav.nextPrevNav(e, 39) : nav.nextPrevNav(e, 40);
@@ -547,7 +557,7 @@
 
 			puzInit.init();
 			for(var i=1;i<=8;i++)
-				$("td[data-coords='4,"+i+"']").children().addClass('active');				
+				$("td[data-coords='4,"+i+"']").children().addClass('blue');				
 	}
 	
 })(jQuery_1_6_2);

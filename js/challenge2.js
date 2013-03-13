@@ -1,6 +1,5 @@
 var array=[
 	13,
-	14,
 	6,
 	1,
 	2,
@@ -8,6 +7,7 @@ var array=[
 	18,
 	9,
 	8,
+	5,
 ]
 function showModalc2 (numberOfFlower) {
 	console.log(numberOfFlower);
@@ -15,4 +15,12 @@ function showModalc2 (numberOfFlower) {
 	$('#description'+array[numberOfFlower]).show();
 	$('#modalInfo').modal('show');
 	$('img').attr('src','img/'+(array[numberOfFlower]+1)+'.jpg');
+}
+function showCannabis()
+{
+	//$('#btnCannabis').onClick(function()
+	// {
+	// 	showModalc2(9);
+	// });
+	$('.sloved').show();
 }
