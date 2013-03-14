@@ -10,6 +10,7 @@
     <meta content="" name="author"><!-- Le styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet"><!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -22,7 +23,7 @@
     <link href="ico/favicon.png" rel="shortcut icon">
 </head>
 
-<body>
+<body class="bodyCentered">
     <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
             <div class="container-fluid">
@@ -42,17 +43,40 @@
             </div>
         </div>
     </div>
-    <div class="container" style="text-align:center">
-        <ul style="list-style-type: none;">
-        <li style="margin:10px"><a href="teorie.html"><button class="btn btn-large">Learn</btn></li></a>
-        <li style="margin:10px"><a href="practice.html"><button class="btn btn-large">Play</btn></li>
-        <li style="margin:10px"><a href="surse.html"><button class="btn btn-large">Sources</btn></li></a>
+    <div class="container" style="text-align:center;">
+        <ul style="list-style-type: none">
+            <li style="margin:10px"><a href="teorie.html"><button class="btn btn-large">Learn</btn></li></a>
+            <li style="margin:10px"><a href="practice.html"><button class="btn btn-large">Play</btn></li>
+            <li style="margin:10px"><a href="surse.html"><button class="btn btn-large">Sources</btn></li></a>
         </ul>
+        <div class="row-fluid">
+            <img class="span4" src="img/eulogo.png">
+            <img class="span2" src="img/cnlogo.png" style="height:10%;width:10%">
+            <img class="span2" src="img/cologo.png">
+            <div class="span4"> <p> ‘This project has been funded with support from the European Commission. This publication [communication] reflects the views only of the author, and the Commission cannot be held responsible for any use which may be made of the information contained therein.’ </p> </div>
+         </div>
     </div> <!-- /container -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-
+    <script>
+        (function ($) {
+        $.fn.vAlign = function() {
+        return this.each(function(i){
+            $(this).children().wrapAll('<div class="nitinh-vAlign" style="position:relative;"></div>');
+            var div = $(this).children('div.nitinh-vAlign');
+            var ph = $(this).innerHeight();
+            var dh = div.height();
+            var mh = (ph - dh) / 2;
+            div.css('top', mh);
+        });
+        };
+        })(jQuery);
+        $(function () {
+            console.log("hello");
+            $('.bodyCentered').vAlign();    
+        });
+        
+    </script>
 </body>
 </html>
