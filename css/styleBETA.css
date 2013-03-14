@@ -8,8 +8,13 @@
 -ms-user-select: none;
 user-select: none;
 border-style:solid;
+height:20px;
 border-width:5px;
 }
 .whiteText{
   color:white;
+}
+.noBorder{
+  border-color: white;
+  height:20px;
 }

@@ -4,7 +4,7 @@ var array = [-1, 1, 10, 14, 0, 2, 6, 13, 15, 9, 8 ];
 function showModal(id)
 {
 	console.log(id);
-	$('img').attr('src','img/'+(id+1)+'.jpg');
+	$('#imgModal').attr('src','img/'+(id+1)+'.jpg');
 	$(".description").hide();
 	$("#description"+id).show();
 	$("#modalInfo").modal('show');
@@ -47,8 +47,8 @@ function setupInitial () {
 
   				var draggableId = ui.draggable.attr("id");
   				var droppableId = $(this).attr("id");
-  				$('#'+draggableId).html(" ")
-  				$('#'+droppableId).html(" ");
+  				$('#'+draggableId).html(" ").addClass('noBorder');
+  				$('#'+droppableId).html(" ").addClass('noBorder');
   				$('#'+draggableId).draggable( 'disable' );
   				$('#'+droppableId).html(" ");
   				isCorrect=1;
