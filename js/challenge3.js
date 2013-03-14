@@ -34,7 +34,7 @@ function spawnQuestionAndAnswers () {
 function showModal(id)
 {
 	console.log(id);
-	$('img').attr('src','img/'+(id+1)+'.jpg');
+	$('#imgModal').attr('src','img/'+(id+1)+'.jpg');
 	$(".description").hide();
 	$("#description"+id).show();
 	$("#modalInfo").modal('show');

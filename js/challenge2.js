@@ -14,7 +14,7 @@ function showModalc2 (numberOfFlower) {
 	$(".description").hide();
 	$('#description'+array[numberOfFlower]).show();
 	$('#modalInfo').modal('show');
-	$('img').attr('src','img/'+(array[numberOfFlower]+1)+'.jpg');
+	$('#imgModal').attr('src','img/'+(array[numberOfFlower]+1)+'.jpg');
 }
 function showCannabis()
 {
