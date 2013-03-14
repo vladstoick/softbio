@@ -8,7 +8,7 @@
 -ms-user-select: none;
 user-select: none;
 border-style:solid;
-height:20px;
+height:35px;
 border-width:5px;
 }
 .whiteText{
@@ -16,5 +16,5 @@ border-width:5px;
 }
 .noBorder{
   border-color: white;
-  height:20px;
+  height:35px;
 }
