@@ -55,7 +55,7 @@ var jQuery_1_6_2 = $.noConflict(true);
 					starty: 6
 				},
 				{
-					clue: "A plant whose bark contains a substance that can be used to produce aspirin(latin name)",
+					clue: "A plant whose bark contains a substance that can be used to produce aspirin(Latin name)",
 					answer: "salix",
 					position: 16,
 					orientation: "across",

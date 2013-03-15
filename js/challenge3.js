@@ -1,7 +1,7 @@
 var answers=[2, 3, 3, 1, 1, 2, 3, 3, 3, 1];
 var choice=[
 	["Tobacco", "St. John’s Wart", "Scots Pine", "Wormwood", "White Willow", "Datura", "Kola nut", "relaxation of the nervous system", "Common Hop ", "Corn Poppy"],
-	["Lavender", "Common Hop", "Chamomile", "Tea", "Lavender", "Arabica coffe", "Tea", "hallucinations", "Corn Poppy", "White Willow"],
+	["Lavender", "Common Hop", "Chamomile", "Tea", "Lavender", "Arabica coffee", "Tea", "hallucinations", "Corn Poppy", "White Willow"],
 	["Tea", "Greater Celandine", "Peppermint", "Tobacco", "Cannabis", "Passionflower", "Common hawthorn", "the stimulation of the nervous system", "Absinthium", "Tobacco"]
 ];
 var array=[
